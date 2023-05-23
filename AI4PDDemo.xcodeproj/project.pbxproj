@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		504A5F8F2A0A82BF001DAA2C /* LayoutGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504A5F8E2A0A82BF001DAA2C /* LayoutGuideView.swift */; };
+		504A5F922A0A8683001DAA2C /* BodyBoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504A5F912A0A8683001DAA2C /* BodyBoundingBoxView.swift */; };
 		50D84AEC29F0127000711512 /* AI4PDDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D84AEB29F0127000711512 /* AI4PDDemoApp.swift */; };
 		50D84AEE29F0127000711512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D84AED29F0127000711512 /* ContentView.swift */; };
 		50D84AF029F0127100711512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D84AEF29F0127100711512 /* Assets.xcassets */; };
@@ -14,6 +16,11 @@
 		50D84AFD29F0127100711512 /* AI4PDDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D84AFC29F0127100711512 /* AI4PDDemoTests.swift */; };
 		50D84B0729F0127100711512 /* AI4PDDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D84B0629F0127100711512 /* AI4PDDemoUITests.swift */; };
 		50D84B0929F0127100711512 /* AI4PDDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D84B0829F0127100711512 /* AI4PDDemoUITestsLaunchTests.swift */; };
+		50D84B1629F01A6200711512 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D84B1529F01A6200711512 /* CameraViewController.swift */; };
+		50D84B1829F01A9A00711512 /* ChatbotAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D84B1729F01A9A00711512 /* ChatbotAvatarView.swift */; };
+		50D84B1D29F1783600711512 /* FeatureDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D84B1C29F1783600711512 /* FeatureDetector.swift */; };
+		50D84B2029F17F9700711512 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D84B1F29F17F9700711512 /* CameraViewModel.swift */; };
+		50EC8FF52A0BD4AD00CF0F08 /* CameraInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EC8FF42A0BD4AD00CF0F08 /* CameraInstructor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		504A5F8E2A0A82BF001DAA2C /* LayoutGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGuideView.swift; sourceTree = "<group>"; };
+		504A5F912A0A8683001DAA2C /* BodyBoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBoundingBoxView.swift; sourceTree = "<group>"; };
 		50D84AE829F0127000711512 /* AI4PDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AI4PDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D84AEB29F0127000711512 /* AI4PDDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI4PDDemoApp.swift; sourceTree = "<group>"; };
 		50D84AED29F0127000711512 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,12 @@
 		50D84B0229F0127100711512 /* AI4PDDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AI4PDDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D84B0629F0127100711512 /* AI4PDDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI4PDDemoUITests.swift; sourceTree = "<group>"; };
 		50D84B0829F0127100711512 /* AI4PDDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI4PDDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50D84B1529F01A6200711512 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		50D84B1729F01A9A00711512 /* ChatbotAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotAvatarView.swift; sourceTree = "<group>"; };
+		50D84B1929F01B5200711512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		50D84B1C29F1783600711512 /* FeatureDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureDetector.swift; sourceTree = "<group>"; };
+		50D84B1F29F17F9700711512 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		50EC8FF42A0BD4AD00CF0F08 /* CameraInstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraInstructor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		504A5F902A0A8668001DAA2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50D84B1729F01A9A00711512 /* ChatbotAvatarView.swift */,
+				504A5F8E2A0A82BF001DAA2C /* LayoutGuideView.swift */,
+				504A5F912A0A8683001DAA2C /* BodyBoundingBoxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		50D84ADF29F0127000711512 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +119,12 @@
 		50D84AEA29F0127000711512 /* AI4PDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				50D84B1929F01B5200711512 /* Info.plist */,
 				50D84AEB29F0127000711512 /* AI4PDDemoApp.swift */,
 				50D84AED29F0127000711512 /* ContentView.swift */,
+				50D84B1529F01A6200711512 /* CameraViewController.swift */,
+				504A5F902A0A8668001DAA2C /* Views */,
+				50D84B1E29F17F7F00711512 /* Models */,
 				50D84AEF29F0127100711512 /* Assets.xcassets */,
 				50D84AF129F0127100711512 /* Preview Content */,
 			);
@@ -125,6 +154,16 @@
 				50D84B0829F0127100711512 /* AI4PDDemoUITestsLaunchTests.swift */,
 			);
 			path = AI4PDDemoUITests;
+			sourceTree = "<group>";
+		};
+		50D84B1E29F17F7F00711512 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50D84B1C29F1783600711512 /* FeatureDetector.swift */,
+				50D84B1F29F17F9700711512 /* CameraViewModel.swift */,
+				50EC8FF42A0BD4AD00CF0F08 /* CameraInstructor.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +296,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D84B1D29F1783600711512 /* FeatureDetector.swift in Sources */,
+				50EC8FF52A0BD4AD00CF0F08 /* CameraInstructor.swift in Sources */,
+				50D84B1629F01A6200711512 /* CameraViewController.swift in Sources */,
+				50D84B1829F01A9A00711512 /* ChatbotAvatarView.swift in Sources */,
 				50D84AEE29F0127000711512 /* ContentView.swift in Sources */,
+				504A5F922A0A8683001DAA2C /* BodyBoundingBoxView.swift in Sources */,
+				504A5F8F2A0A82BF001DAA2C /* LayoutGuideView.swift in Sources */,
 				50D84AEC29F0127000711512 /* AI4PDDemoApp.swift in Sources */,
+				50D84B2029F17F9700711512 /* CameraViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,13 +463,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AI4PDDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 5TJU5VFP86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AI4PDDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"Die Kamera wird für die Aufnahme benötigt\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,13 +495,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AI4PDDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 5TJU5VFP86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AI4PDDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"Die Kamera wird für die Aufnahme benötigt\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

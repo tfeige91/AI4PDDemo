@@ -8,19 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject private(set) var model: CameraViewModel
+    
+    init(model: CameraViewModel) {
+      self.model = model
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        HStack {
+            ChatbotAvatarView()
+                .frame(width: UIScreen.main.bounds.width / 3, alignment: .leading)
+            
+            GeometryReader { geo in
+                ZStack {
+                    CameraView(model: model)
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now()+2) {
+                                model.startInstruction()
+                            }
+                        }
+                        
+                    LayoutGuideView(
+                        layoutGuideFrame: model.bodyLayoutGuideFrame,
+                        hasDetectedValidBody: model.hasDetectedValidBody)
+                    
+                    BodyBoundingBoxView(model: model)
+
+                }
+                .ignoresSafeArea()
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(model: CameraViewModel())
     }
 }

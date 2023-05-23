@@ -11,7 +11,7 @@ import SwiftUI
 struct AI4PDDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(model: CameraViewModel())
         }
     }
 }
