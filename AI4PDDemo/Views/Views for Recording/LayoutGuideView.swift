@@ -16,6 +16,7 @@ struct LayoutGuideView: View {
         RoundedRectangle(cornerRadius: 20)
           .stroke(hasDetectedValidBody ? Color.green : Color.red,lineWidth: 6.0)
           .frame(width: layoutGuideFrame.width, height: layoutGuideFrame.height)
+          .offset(x:layoutGuideFrame.origin.x,y:layoutGuideFrame.origin.y)
       }
     }
 }
@@ -23,7 +24,7 @@ struct LayoutGuideView: View {
 struct LayoutGuideView_Previews: PreviewProvider {
     static var previews: some View {
         LayoutGuideView(
-            layoutGuideFrame: CGRect(x: 0, y: 0, width: 400, height: 700),
+            layoutGuideFrame: CGRect(x: 0, y: 0, width: 600, height: 750),
             hasDetectedValidBody: true
         )
     }

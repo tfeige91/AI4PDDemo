@@ -11,7 +11,8 @@ import SwiftUI
 struct AI4PDDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(model: CameraViewModel())
+            ContentView()
+                .environment(\.managedObjectContext, PersistenceController.shared.viewContext)
         }
     }
 }

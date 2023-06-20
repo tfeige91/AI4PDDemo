@@ -89,7 +89,7 @@ extension CameraViewController {
         previewLayer = AVCaptureVideoPreviewLayer(session: session)
         if let connection = previewLayer?.connection {
             if connection.isVideoOrientationSupported {
-                connection.videoOrientation = AVCaptureVideoOrientation(rawValue: UIDevice.current.orientation.rawValue) ?? .portrait
+                connection.videoOrientation = .portrait
             }
         }
         previewLayer?.videoGravity = .resizeAspectFill
@@ -101,6 +101,7 @@ extension CameraViewController {
             guard let self = self,
                   let layer = self.previewLayer else {return}
             previewLayer?.frame = view.bounds
+            
             self.view.layer.addSublayer(layer)
             
             
@@ -123,7 +124,7 @@ extension CameraViewController: FeatureDetectorDelegate {
 }
 
 
-struct CameraView: UIViewControllerRepresentable {
+struct CameraViewRepresentable: UIViewControllerRepresentable {
     
     typealias UIViewControllerType = CameraViewController
     private(set) var model: CameraViewModel

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BodyBoundingBoxView: View {
-    @ObservedObject private(set) var model: CameraViewModel
+    @EnvironmentObject var model: CameraViewModel
 
     var body: some View {
         switch model.bodyGeometryState {
@@ -31,6 +31,6 @@ struct BodyBoundingBoxView: View {
 
 struct BodyBoundingBoxView_Previews: PreviewProvider {
     static var previews: some View {
-        BodyBoundingBoxView(model: CameraViewModel())
+        BodyBoundingBoxView()
     }
 }

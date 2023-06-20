@@ -6,45 +6,42 @@
 //
 
 import SwiftUI
-import AVFoundation
+
 
 struct ChatbotAvatarView: View {
     
-    let synthesizer = AVSpeechSynthesizer()
+    let size: CGSize
     
     var body: some View {
-        VStack {
-            // Add your chatbot avatar here
-            Image(systemName: "person.circle")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding()
-            Button {
-                speak()
-            } label: {
-                Image(systemName: "mic")
-                    .font(.title)
-                    .foregroundColor(.red)
+       
+            VStack(spacing: 30) {
+                // Add your chatbot avatar here
+                Image(systemName: "person.circle")
+                    .resizable()
+                    .frame(width: size.width * 0.6,height: size.width * 0.6)
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.blue)
+                
+                    
+                Text("Hallo,\nich bin Botty, dein Assistent.")
+                    .font(.headline.bold())
+                    .lineLimit(nil)
+                    .foregroundColor(.blue)
+                
+                Spacer()
             }
-
-            Spacer()
-        }
+            .padding(.all,10)
+            .frame(width: size.width, height: size.height)
+            .background(.ultraThinMaterial.opacity(0.99), in: RoundedRectangle(cornerRadius: 20))
+            
+       
+       
     }
-    func speak() {
-        let speech = ["Willkommen zum Reiseführer nach Wien! Die Hauptstadt Österreichs, auch bekannt als die Stadt der Musik und die Stadt der Träume, bietet eine Fülle an kulturellen, historischen und kulinarischen Erlebnissen für jeden Reisenden. Von beeindruckenden Barockgebäuden bis hin zu charmanten Cafés und einer lebendigen Kunstszene ist Wien ein einzigartiges Reiseziel, das es zu entdecken gilt."]
-        let text = speech.randomElement()!
-        let utterance = AVSpeechUtterance(string: text)
-        utterance.voice = AVSpeechSynthesisVoice(language: "de-DE")
-        utterance.rate = 0.5 // slower speech rate for a relaxed and friendly tone
-        utterance.pitchMultiplier = 1.2 // slightly higher pitch for a more upbeat and friendly tone
-        utterance.volume = 1.0 // maximum volume for a clear and friendly voice
-        synthesizer.speak(utterance)
     
-    }
 }
 
 struct ChatbotAvatarView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatbotAvatarView()
+        ChatbotAvatarView(size: CGSize(width: 300, height: 400))
     }
 }
