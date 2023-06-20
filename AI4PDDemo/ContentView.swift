@@ -9,41 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject private(set) var model: CameraViewModel
-    
-    init(model: CameraViewModel) {
-      self.model = model
-    }
+    @StateObject var cameraModel: CameraViewModel = CameraViewModel()
     
     var body: some View {
-        HStack {
-            ChatbotAvatarView()
-                .frame(width: UIScreen.main.bounds.width / 3, alignment: .leading)
-            
-            GeometryReader { geo in
-                ZStack {
-                    CameraView(model: model)
-                        .onAppear {
-                            DispatchQueue.main.asyncAfter(deadline: .now()+2) {
-                                model.startInstruction()
-                            }
-                        }
-                        
-                    LayoutGuideView(
-                        layoutGuideFrame: model.bodyLayoutGuideFrame,
-                        hasDetectedValidBody: model.hasDetectedValidBody)
-                    
-                    BodyBoundingBoxView(model: model)
-
-                }
-                .ignoresSafeArea()
-            }
-        }
+        HomeScreen()
+            .environmentObject(cameraModel)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(model: CameraViewModel())
+        ContentView()
     }
 }
